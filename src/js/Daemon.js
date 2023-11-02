@@ -11,10 +11,17 @@ export default class Daemon extends Character {
         }
     }
 
-    setParams(dist, stoned = false) {
+    setParams(dist) {
         this.dist = dist;
-        this.stoned = stoned;
         this.attackBase = this.attack;
+    }
+
+    get poison() {
+        return this.stoned;
+    }
+
+    set poison(value) {
+        this.stoned = value;
     }
 
     get attack() {
