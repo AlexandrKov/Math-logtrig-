@@ -16,11 +16,11 @@ export default class Daemon extends Character {
         this.attackBase = this.attack;
     }
 
-    get poison() {
+    get getStoned() {
         return this.stoned;
     }
 
-    set poison(value) {
+    set setStoned(value) {
         this.stoned = value;
     }
 
@@ -38,3 +38,11 @@ export default class Daemon extends Character {
         this.attackBase = value;
     }
 }
+
+// const pers = new Daemon("alex");
+// pers.setParams(2)
+// console.log(pers.getStoned)
+// console.log(pers)
+// pers.setStoned = true
+// console.log(pers.getStoned)
+// console.log(pers)
